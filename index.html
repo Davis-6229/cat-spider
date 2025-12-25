@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>智慧猫咪社区 - 最终修复版</title>    <!-- 🟢 PWA 核心配置 (让手机全屏运行) -->
+    <title>智慧猫咪社区 - 最终修复版</title>       <!-- 🟢 终极 PWA 配置 -->
+    <!-- 1. 链接 manifest 文件 (解决地址栏问题) -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- 2. iOS 专用配置 -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-title" content="猫咪社区">
     
-    <!-- APP 图标 https://www.instagram.com/yakupayd1n/p/DDxHhUFIknW/>
-    <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/616/616430.png">
-    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/616/616430.png">    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- 3. 图标配置 (直接读取同目录下的 icon.png) -->
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="icon" type="image/png" href="icon.png">    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <style>
         :root { --primary: #9AB999; --bg: #F7F9F7; --text: #333; --c-diet: #FF9F43; --c-know: #EF5777; --c-med: #4A90E2; --c-daily: #2ED573; --c-task: #575FCF; --c-money: #FDCB6E; --c-stock: #05C46B; --c-user: #8854D0; }
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif; -webkit-tap-highlight-color: transparent; }
